@@ -27,6 +27,9 @@ config ZMK_SPLIT
 config BT_CTLR
     default BT
 
+config ZMK_BLE_PASSKEY_ENTRY
+    default y
+
 config ZMK_KSCAN_MATRIX_WAIT_BETWEEN_OUTPUTS
     default 5
 

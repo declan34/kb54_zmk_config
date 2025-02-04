@@ -36,13 +36,13 @@
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | ESC  |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     | GUI  |
-//                    | ALT |     | SPC |   | BSP |     | ENTR |
+//                    | ALT |     | SPC |   | BSP | ESC | ENTR |
                         bindings = <
    &kp GRAVE    &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp DEL
    &kp TAB      &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp CARET   &kp AMPS    &kp ASTRK   &kp LPAR    &kp RPAR    &kp ESC
    &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4            &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans
    &kp LSHFT    &trans          &trans          &trans          &trans          &trans                  &trans      &trans      &trans      &trans      &trans      &kp RGUI
-                                                &kp LALT        &trans          &kp SPACE               &kp BSPC    &trans      &kp RET
+                                                &kp LALT        &trans          &kp SPACE               &kp BSPC    &kp ESC     &kp RET
                         >;
                 };
 
@@ -54,13 +54,13 @@
 // |  TAB |     |VOL- |VOL+ | P/P | PRV |   | NXT | BR- | BR+ |  (  |  )  | ESC  |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  GUI |
-//                    | ALT |     | SPC |   | BSP |     | ENTR |
+//                    | ALT | ESC | SPC |   | BSP |     | ENTR |
                         bindings = <
    &kp GRAVE &kp N1     &kp N2          &kp N3          &kp N4      &kp N5              &kp N6      &kp N7          &kp N8          &kp N9      &kp N0   &kp DEL
    &kp  TAB  &trans     &kp C_VOL_DN    &kp C_VOL_UP    &kp C_PP    &kp C_PREV          &kp C_NEXT  &kp C_BRI_DN    &kp C_BRI_UP    &kp LPAR    &kp RPAR &kp ESC
    &kp LCTRL &trans     &trans          &trans          &trans      &trans              &kp MINUS   &kp EQUAL       &kp LBKT        &kp RBKT    &kp BSLH &kp GRAVE
    &kp LSHFT &trans     &trans          &trans          &trans      &trans              &kp UNDER   &kp PLUS        &kp LBRC        &kp RBRC    &kp PIPE &kp RGUI
-                                        &kp LALT        &trans      &kp SPACE           &kp BSPC   &trans          &kp RET
+                                        &kp LALT        &kp ESC     &kp SPACE           &kp BSPC   &trans          &kp RET
                         >;
                 };
         };
